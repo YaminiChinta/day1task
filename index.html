@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day1 Assignment</title>
+    <link type="text/css" rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="apform">
+        <h1>Appointment Form</h1>
+        <hr><br>
+        <form name="myform" id="myform" action="details.html" onsubmit="return validateform()" >
+            <label for="name">Enter Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="ex:dravid warner"><br><br>
+            
+            <label for="pwd">Enter Password:</label>
+            <input type="password" id="pwd" name="pwd" placeholder="atleast 6 character"><br><br>
+            
+            <label for="email">Enter Email Id:</label>
+            <input type="email" id="email" name="email" placeholder="ex: dravid@123gmail.com" required><br><br>
+            
+            <label for="phno">Enter Phone Number:</label>
+            <input type="tel" id="phno" name="phno" placeholder="10 digit Number" required><br><br>
+
+            <label for="date">Select Birth date:</label>
+            <input type="date" id="date" name="date" required><br><br>
+
+            <label for="gender">Select Gender:   </label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br><br>
+
+            <label for="branch">Select Branch:  </label>
+            <input type="checkbox" name="branch" id="cse">
+            <label for="cse">CSE</label>
+            <input type="checkbox" name="branch" id="ece">
+            <label for="ece">ECE</label>
+            <input type="checkbox" name="branch" id="id">
+            <label for="it">IT</label><br><br>
+            
+            <label for="address">Enter Your Present Address:</label>
+            <textarea rows="7" cols="40" name="address" id="address" required> </textarea><br><br>
+            
+            <label for="country">Select a Country to Work for short time:</label>
+            <select name="country" id="country" required>
+                <option value="India">India</option>
+                <option value="Sri Lanka">Sri Lanka</option>
+                <option value="Australia">Australia</option>
+                <option value="America">America</option>
+            </select><br><br>
+
+            <label for="fileselect">Uplaod a Course Completion Certifiate: </label>
+            <input type="file" id="fileselect" name="fileselect" required><br><br>
+
+            <label for="link">Github or Replit Profile link :  </label>
+            <input type="url" id="link" name="link" placeholder="https://github.com/@name"><br><br>
+
+            <input  type="submit" value="Submit" class="submit">
+            <input type="reset" value="Reset" class="reset"><br><br>
+        </form>
+    </div>
+    <script type="text/javascript"  src="script.js"></script>
+</body>
+</html>
