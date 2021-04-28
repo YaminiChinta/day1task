@@ -12,7 +12,7 @@ function validateform()
         alert("Password must contain atleast 6 characters..");
         return false;
     }
-    if(pno.value<10 || pno.value>10)
+    if(pno.value.length<10 || pno.value.length>10)
     {
         alert("Invalid Phone Number");
         return false;
